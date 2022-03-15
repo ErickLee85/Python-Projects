@@ -23,6 +23,10 @@ class Professor(Employee):
         self.classes = classes
         self.tenure = tenure
 
+    def name(self):
+        return("{} {} is Professor at Cornell University and teaches both {} and {}.".format(self.first,self.last,self.classes[0],self.classes[1]))
+
+
 class campusPolice(Employee):
 
     raise_amount = 1.15
@@ -32,13 +36,18 @@ class campusPolice(Employee):
         self.badge_id = badge_id
         self.squad_car = squad_car
 
-    def officer_Info(self):
-        print('Officer {} {}, Badge ID: {} and squad car# is: {}.'.format(self.first,self.last,self.badge_id,self.squad_car))
+    def name(self):
+        return('Officer {} {} patrols campus during night hours, his Badge ID is {} and squad car number is {}.'.format(self.first,self.last,self.badge_id,self.squad_car))
         
 
 
-professor1 = Professor("Erick", "Crowne", 75000, True,  ["astronomy", "physics"])
-officer1 = campusPolice("Norrid", "Radd", 65000, "A564F", 214)
+professor1 = Professor("Carl", "Sagan", 75000, True,  ["Astronomy", "Physics"])
+officer1 = campusPolice("Norrin", "Radd", 65000, "A564F", 214)
+
+print(professor1.name())
+print(officer1.name())
+
+
 
 
 
