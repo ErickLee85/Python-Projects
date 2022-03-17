@@ -13,7 +13,7 @@ class History(Movie): #Child class for "History" genre of movies with unique att
     historians = ('')
     archive = ' '
     scientists = ('')
-    
+
     
     
     
