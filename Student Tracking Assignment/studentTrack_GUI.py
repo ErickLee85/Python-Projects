@@ -50,6 +50,9 @@ def load_gui(self):
     self.btn_close = tk.Button(self.master,width=12,height=2,text='Close',command=lambda: studentTrack_func.ask_quit(self))
     self.btn_close.grid(row=9,column=4,columnspan=1,padx=(0,40),pady=(45,10),sticky=E)
 
+    self.btn_clear = tk.Button(self.master,width=12,height=2,text='Clear Fields', command=lambda: studentTrack_func.onClear(self))
+    self.btn_clear.grid(row=10,column=4,columnspan=1,padx=(0,40),pady=(45,10),sticky=E)
+
     studentTrack_func.create_db(self)
 
 if __name__ == "__main__":
