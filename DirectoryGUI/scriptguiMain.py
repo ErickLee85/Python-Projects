@@ -10,8 +10,8 @@ class ParentWindow(Frame):
         Frame.__init__(self, master, *args, **kwargs)
 
         self.master = master
-        self.master.minsize(500,200)
-        self.master.maxsize(500,200)
+        self.master.minsize(700,200)
+        self.master.maxsize(700,200)
         self.master.configure(bg='lightgray')
         self.master.title("Check Files")
         arg = self.master

@@ -20,17 +20,17 @@ def CheckFile(self):
     SECONDS_IN_DAY = 24 * 60 * 60
 
     now = time.time()
-    before = now - SECONDS_IN_DAY
-    sourceFolder = self.first_browse.get()
-    destinationFolder = self.second_browse.get()
+    before = now - SECONDS_IN_DAY #creating the variable to be tested for conditional statement of modification time
+    sourceFolder = self.first_browse.get() #retrieving the source directory from entry widget with .get()
+    destinationFolder = self.second_browse.get() #retrieving the the destination directory from the second entry widget with .get()
 
-    for file in os.listdir(self.first_browse.get()):
+    for file in os.listdir(self.first_browse.get()): #using a for loop to iterate through the files in the source directory
         sourceLocation = os.path.join(sourceFolder, file)
-        mod_time = os.path.getmtime(sourceLocation)
-        if mod_time > before:
+        mod_time = os.path.getmtime(sourceLocation) #getting the modification time of each file from the source folder
+        if mod_time > before: #if the modification time is less than 24 hours, transfer file:
                 destinationLocation_file = os.path.join(destinationFolder, file)
                 shutil.move(sourceLocation, destinationLocation_file)
-        messagebox.showinfo('Sucess','Files transfered successfully.')
+    messagebox.showinfo('Sucess','Files transfered successfully.')
                 
 
     
