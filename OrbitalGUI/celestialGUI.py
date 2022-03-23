@@ -15,7 +15,7 @@ def orbitalTime():
     #my_canvas.itemconfig(thecanvas,text="The orbital period of your planet is {} Earth years!".format(formula))
     theYears = Label(width=50,text="",bg="darkblue",fg="white")
     theYears.pack()
-    theYears.configure(text="The orbital period of your planet is {} Earth years!".format(round(formula))) 
+    theYears.configure(text="The orbital period of your planet is {} Earth years!".format(round(formula,2))) #round(formula,2) is rounding the variable formula to two decimal places.
     theYears_window=my_canvas.create_window(200,200,window=theYears)
     
     
