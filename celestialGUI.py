@@ -1,6 +1,5 @@
 from tkinter import *
 import math
-import sympy
 
 root = Tk()
 root.minsize(400,200)
