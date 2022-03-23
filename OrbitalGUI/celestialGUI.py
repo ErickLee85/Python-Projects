@@ -10,9 +10,6 @@ root.title('                                  Orbital Period Calculator')#Center
 def orbitalTime():
     distance = float(theEntry.get())
     formula = math.sqrt(distance**3)
-    #orbitalLabel.configure(text="The orbital period of your planet is {} Earth years!".format(formula)) - Previous paramater before canvas
-    #thecanvas = my_canvas.create_text(200,200,fill="white",text="")
-    #my_canvas.itemconfig(thecanvas,text="The orbital period of your planet is {} Earth years!".format(formula))
     theYears = Label(width=50,text="",bg="darkblue",fg="white")
     theYears.pack()
     theYears.configure(text="The orbital period of your planet is {} Earth years!".format(round(formula,2))) #round(formula,2) is rounding the variable formula to two decimal places.
