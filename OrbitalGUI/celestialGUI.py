@@ -4,7 +4,7 @@ import math
 root = Tk()
 root.minsize(400,275)
 root.maxsize(400,275)
-root.title('                                  Orbital Period Calculator')#Centering with spaces, as a windows user there is no way to cetner a title in tkinter
+root.title('Orbital Period Calculator')
 
 
 def orbitalTime():
