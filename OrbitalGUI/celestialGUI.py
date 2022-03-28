@@ -28,7 +28,8 @@ def msg():
                                    "Saturn - 9.54\n"
                                    "Uranus - 19.20\n"
                                    "Neptune - 30.06\n"
-                                   "Pluto - 39.5")
+                                   "Pluto - 39.5\n"
+                                   "Halleys Comet - 17.9")
     
 
 bg = PhotoImage(file="Image/spaceimage1.png")
