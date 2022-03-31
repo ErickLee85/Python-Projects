@@ -1,6 +1,11 @@
 import datetime
 import pytz
+from tkinter import *
 
+root = Tk()
+root.minsize(400,200)
+root.title('Store Hours')
+          
 
 morningHours = datetime.time(8, 0, 0)
 eveningHours = datetime.time(17, 0, 0)
