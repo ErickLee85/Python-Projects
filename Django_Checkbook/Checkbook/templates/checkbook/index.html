@@ -7,7 +7,7 @@
     <div class="text-center">
         <h5>Manage your existing account!</h5>
         <form method="POST">
-            <label id="index-label">Choose Account:</label><input type="text" name="Account"><br>
+            <!--<label id="index-label">Choose Account:</label><input type="text" name="Account"><br>-->
             {% csrf_token %}
             {{ form.account }}
             <button type="submit">Go to Account</button>
