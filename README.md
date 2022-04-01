@@ -1,12 +1,14 @@
 #Python_Projects
-These are my projects written in Python. They use several modules, such as tkinter, sqlite3, etc.
+<br>These are my projects written in Python. They use several modules, such as tkinter, sqlite3, etc.
 ## Apps:
 [File Transfer](https://github.com/ErickLee85/Python-Projects/tree/main/FileTransferGUI)
 <br>[DJango Checkbook](https://github.com/ErickLee85/Python-Projects/tree/main/Django_Checkbook)
 <br>[Student Tracking](https://github.com/ErickLee85/Python-Projects/tree/main/Student%20Tracking%20Assignment)
 <br>[Astronomy Calculator](https://github.com/ErickLee85/Python-Projects/tree/main/OrbitalGUI)
 <br>[Store Hours](https://github.com/ErickLee85/Python-Projects/blob/main/StoreHoursGUI.py)
+
 <hr>
+
 ### File Transfer 
 This app utilizes a gui that will browse a folder of your choice and iterate through each file, checking if it was modified within a specified time and if True, will move those files to designated folder.
 ### Django Checkbook
