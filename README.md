@@ -19,6 +19,6 @@ Built a GUI with tkinter that tracks all Student information (First name, last n
 ### Astronomy Calculator
 This app calculates any objects orbital period based off one argument: its the distance from the sun. I created this during my leisure time because I love Astronomy :) and it helped me to become better because it required tkinter Canvas with which I had no previous experience with.
 ### Gravitational Acceleration
-This one was fun, it will tell you how far you traven based off the time entered and the graviational body of your choosing! Have fun :)
+This one was fun, it will tell you how far you travel based off the time entered and the graviational body of your choosing! Have fun :)
 ### Store Hours
 This app checks to see if various branches around the world of a store are open or not. You can simply select your branch from a list and it will provide you with the answer you seek.
