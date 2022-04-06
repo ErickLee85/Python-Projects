@@ -24,4 +24,5 @@ obj1.payment(199,200)
 obj2 = giftCardPayment()
 obj2.payment(199,300)
 
-
+obj3 = giftCardPayment()
+obj3.payment(150,211)
