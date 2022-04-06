@@ -21,4 +21,7 @@ obj1 = giftCardPayment()
 obj1.paySlip(199)
 obj1.payment(199,200)
 
+obj2 = giftCardPayment()
+obj2.payment(199,300)
+
 
