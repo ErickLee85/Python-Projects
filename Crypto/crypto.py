@@ -1,4 +1,3 @@
-
 import requests
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 
@@ -19,15 +18,17 @@ headers = {
 }
 
 
-response = requests.get(url, params=params, headers=headers)
-data = response.json()
-mydata = data['data']
-print("Top 10 coins\n")
-for coins in mydata:
-    print(f"{coins['name']} | Price: {round(coins['quote']['USD']['price'], 2)} | 24hr change: {round(coins['quote']['USD']['percent_change_24h'], 2)}%" )
+try:
+    response = requests.get(url, params=params, headers=headers)
+    data = response.json()
+    mydata = data['data']
+    print("Top 10 coins\n")
+    for coins in mydata:
+        print(f"{coins['name']} | Price: {round(coins['quote']['USD']['price'], 2)} | 24hr change: {round(coins['quote']['USD']['percent_change_24h'], 2)}%" )
+ 
+except (ConnectionError, Timeout, TooManyRedirects) as e:
+  print(e)
 
-input("Press enter to exit ;)")
-
-
+input("Press enter to exit.")
 
 
